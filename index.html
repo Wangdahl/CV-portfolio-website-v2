@@ -3,9 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/mobile.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fira+Code&display=swap">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+
+    <title>Melker Wångdahl</title>
 </head>
 <body>
-    
+    <header class="the-header">
+        <nav class="main-nav nav-big-screen" aria-label="Main Navigation">
+            <ul>
+                <li><a href="#" class="current-page">Home</a></li>
+                <li><a href="/cv.html">CV</a></li>
+                <li><a href="/who-am-i.html">Who am I?</a></li>
+            </ul>
+        </nav>
+        <nav class="main-nav nav-mobile" aria-label="Main Navigation">
+            <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="nav-ul-mob">
+                <li><a href="#" class="current-page">Home</a></li>
+                <li><a href="/cv.html">CV</a></li>
+                <li><a href="/who-am-i.html">Who am I?</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="banner">
+            <h1><span>Hello! </span><span>My name is </span><span>Melker Wångdahl</span></h1>
+            <div id="banner-div">
+                <div class="profile-div">
+                    <img class="profile-pic" src="./resources/Profile-pic.jpg" alt="Picture of Melker Wångdahl sitting by a laptop.">
+                </div>
+                <div class="profile-text">
+                    <h2>Aspiring Frontend Developer</h2>
+                    <p>With 5 years of in SEO and affiliate marketing behind me, I have plenty of experience with WordPress development, UX optimization and content creation. I´m quipped with a degree in Product Management, focused on e-commerce, and now I am pursuing a second one in Frontend Development where I aim to make a new career.</p>
+                    <button id="cv-button">Download CV</button>
+                </div>
+            </div>
+        </section>
+        <section class="projects-section">
+            <h2>Portfolio</h2>
+            <div class="projects-div">
+                <div class="project" id="project-1">
+                    <img src="./resources/Minimalistic-portfolio.png" alt="">
+                    <h3>Minimalist resumé</h3>
+                    <button>More info</button>
+                    <a href="https://github.com/Wangdahl/excursion" target="_blank">Check it out on GitHub <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="project" id="project-2">
+                    <img src="./resources/rock-paper-scissor-x99.png" alt="">
+                    <h3>Rock, Paper, Scissors</h3>
+                    <button>More info</button>
+                    <a href="https://github.com/Wangdahl/rock-paper-scissors-x99" target="_blank">Check it out on GitHub <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="project" id="project-3">
+                    <img src="./resources/ravenous.png" alt="">
+                    <h3>Ravenous project</h3>
+                    <button>More info</button>
+                    <a href="https://github.com/Wangdahl/ravenous" target="_blank">Check it out on GitHub <i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="project" id="project-4">
+                    <img src="./resources/excursion.png" alt="">
+                    <h3>Excursion project</h3>
+                    <button>More info</button>
+                    <a href="https://wangdahl.github.io/Portfolio-project/" target="_blank">Check it out on GitHub <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="./scripts/script.js"></script>
+    <footer class="footer">
+        <p class="footer-p">Connect with me -></p>
+        <ul id="footer-connect">
+            <li><a href="https://www.linkedin.com/in/melker-w%C3%A5ngdahl/" target="_blank"><i class="fab fa-linkedin"></i>in/melker-wångdahl</a></li>
+            <li><a href="mailto:melker.wangdahl@gmail.com" target="_blank"><i class="fas fa-envelope"></i>melker.wangdahl@gmail.com</a></li>
+            <li><a href="https://github.com/Wangdahl" target="_blank"><i class="fab fa-github"></i>Wangdahl</a></li>
+        </ul>
+    </footer>
 </body>
 </html>

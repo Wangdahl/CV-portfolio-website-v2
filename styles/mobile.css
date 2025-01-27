@@ -1,0 +1,178 @@
+@media (max-width: 1350px) {
+    /* Adjusting grid for project display */
+    .projects-div {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 6rem;
+    }
+}
+
+@media (max-width: 1080px) {
+    /*Sitewide */
+    * {
+        font-size: 16px;
+    }
+    main {
+        margin: 0 2rem;
+        max-width: 100%;
+    }
+
+    h2 {
+        font-size: 1.4rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    /* Navigation */
+    .nav-big-screen {
+        display: none;
+    }
+    .nav-mobile {
+        display: block;
+        position: relative;
+
+    }
+    .menu-icon {
+        background-color: rgba(255, 248, 244, 0.8);
+        display: block;
+        font-size: 2rem;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0.5rem 2rem 0;
+        padding-left: 100%;
+    }
+    .menu-checkbox {
+        display: none;
+    }
+    .nav-ul-mob {
+        display: none;
+        flex-direction: column;
+        gap: 0.5rem;
+        background-color: rgba(255, 248, 244, 0.8);
+        margin: 1rem;
+        padding: 1rem;
+        position: absolute;
+        top: 2.3rem;
+        right: 1rem;
+        list-style: none;
+    }
+    .nav-ul-mob a, .nav-ul-mob li {
+        background-color: transparent;
+    }
+    .menu-checkbox:checked ~ .nav-ul-mob {
+        display: flex;
+    }
+
+    /* Footer */
+    footer {
+        flex-direction: column;
+        margin: 4rem 1rem 1rem;
+    }
+    .footer-p {
+        display: none;
+    }
+    #footer-connect {
+        flex-direction: column;
+    }
+    .fa-linkedin, .fa-envelope, .fa-github {
+        margin-right: 6px;
+        font-size: 0.9rem;
+    }
+    .footer {
+        padding: 2rem 0;
+    }
+    .footer a {
+        font-size: 0.9rem;
+        word-wrap: break-word;
+        word-break: break-all;
+        overflow-wrap: break-word;
+    }
+    /* Section 1 (H1 + presentation) */
+    /* Adjusting H1 animation for mobile */
+    .banner h1 {
+        margin: 7rem 0 4rem;
+    }
+    .banner h1 span {
+        font-size: 1.7rem;
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        width: 0;
+    }
+
+    .banner h1 span:nth-child(1) {
+        animation: typing-1 1s steps(6, end) forwards, blink 1s step-end infinite;;
+        animation-delay: 0s;
+    }
+    .banner h1 span:nth-child(2) {
+        animation: typing-2 1.5s steps(10, end) forwards, blink 1s step-end infinite;;
+        animation-delay: 1s;
+    }
+    .banner h1 span:nth-child(3) {
+        animation: typing-3 2s steps(15, end) forwards, blink 1s step-end infinite;
+        animation-delay: 2.5s;
+    }
+
+    @keyframes typing-1 {
+        0%   { width: 0;           border-right: 3px solid #1A0B03; }
+        99%  { width: 6ch;         border-right: 3px solid #1A0B03; }
+        100% { width: 6ch;         border-right: none;              }
+    }
+    @keyframes typing-2 {
+        0%   { width: 0;           border-right: 3px solid #1A0B03; }
+        99%  { width: 10ch;        border-right: 3px solid #1A0B03; }
+        100% { width: 10ch;        border-right: none;              }
+    }
+    @keyframes typing-3 {
+        0%   { width: 0;           border-right: 3px solid #1A0B03; }
+        100% { width: 15ch;        border-right: 3px solid #1A0B03; }
+    }
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }
+    /* Adjusting presentation layour */
+    #banner-div {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .profile-div {
+        margin: 1rem;
+    }
+    .profile-pic {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /*Project section */
+    /* Switching from grid to flex */
+    .projects-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .project {
+        max-width: 300px;
+    }
+    .project a {
+        margin: 0 0.5rem 2rem 0.5rem;
+        font-size: 0.9rem;
+    }
+    .fa-external-link-alt {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 300px) {
+    html {
+        font-size: 14px;
+    }
+    h1 span {
+        font-size: 1.2rem;
+    }
+}
