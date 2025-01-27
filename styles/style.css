@@ -12,15 +12,15 @@
 
 /* Sitewide elements */
 html,body {
-    height: 100%; /* Ensure full viewport height */
-    margin: 0; /* Remove default margin */
+    height: 100%;
+    margin: 0;
     display: flex;
     flex-direction: column;
 }
 main {
     margin: 0 7rem;
     max-width: 100%;
-    flex: 1; /* This pushes the footer to the bottom if content is short */
+    flex: 1;
     display: block; 
 }
 h1 {
@@ -164,6 +164,7 @@ h1 span {
     width: 300px;
     border-radius: 5px;
     overflow: hidden;
+    box-shadow: 2px 2px 5px #CC5500;
 }
 .profile-text {
     display: flex;
@@ -194,13 +195,29 @@ h1 span {
 }
 .project img {
     max-width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
 }
 .project h3 {
     margin: 1rem 0 1rem;
 }
-.project button {
+.pop-button {
     align-self: center;
     margin: 2rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    box-shadow: 2px 2px 5px #CC5500;
+    transition: all 1s ease;
+}
+.pop-button:hover {
+    cursor: pointer;
+    background-color: #CC5500;
+    color: #FFF8F4;
+    box-shadow: 2px 2px 5px #1A0B03;
+}
+.pop-button:active {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 .project a {
     display: inline-flex;
@@ -217,6 +234,68 @@ h1 span {
     color: inherit;
 }
 
+/* Modal pop-ups */
+.modal {
+    display: none;
+    position: fixed;
+    top: 8rem;
+    align-self: center;
+    justify-self: center;
+    width: 450px;
+    height: 550px;
+    background-color: #FFF8F4;
+    box-shadow: 2px 2px 5px #CC5500;
+    border-radius: 4px;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    z-index: 5;
+    opacity: 0;
+    transform: scale(0.5);
+}
+.modal:target {
+    display: flex;
+    animation: fade-in 0.5s ease forwards;
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.exit-overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    z-index: 5;
+    transform: translateX(-35%);
+    cursor: default;
+}
+.pop-content {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: 6;
+}
+.close {
+    display: inline-block;
+    color: #1A0B03;
+    text-decoration: none;
+    text-transform: color 1s ease;
+    margin-top: auto;
+    align-self: flex-end;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+.close:hover {
+    color: #CC5500;
+}
 /* CV Page styling */
 .cv-sec-one h2 {
     margin: 3.5rem 0 0;

@@ -44,36 +44,69 @@
                 </div>
             </div>
         </section>
-        <section class="projects-section">
+        <section id="#project-section" class="projects-section">
             <h2>Portfolio</h2>
             <div class="projects-div">
                 <div class="project" id="project-1">
                     <img src="./resources/Minimalistic-portfolio.png" alt="">
                     <h3>Minimalist resumé</h3>
-                    <button>More info</button>
-                    <a href="https://github.com/Wangdahl/excursion" target="_blank">Check it out on GitHub <i class="fas fa-external-link-alt"></i></a>
+                    <a href="#popout-one" class="pop-button">More info</a>
+                    <a class="project-external" href="https://wangdahl.github.io/Portfolio-project/" target="_blank">Check it out on GitHub <i class="fas fa-external-link-alt"></i></a>
                 </div>
                 <div class="project" id="project-2">
                     <img src="./resources/rock-paper-scissor-x99.png" alt="">
                     <h3>Rock, Paper, Scissors</h3>
-                    <button>More info</button>
-                    <a href="https://github.com/Wangdahl/rock-paper-scissors-x99" target="_blank">Check it out on GitHub <i class="fas fa-external-link-alt"></i></a>
+                    <a href="#popout-two" class="pop-button">More info</a>
+                    <a class="project-external" href="https://github.com/Wangdahl/rock-paper-scissors-x99" target="_blank">Check it out on GitHub <i class="fas fa-external-link-alt"></i></a>
                 </div>
                 <div class="project" id="project-3">
                     <img src="./resources/ravenous.png" alt="">
                     <h3>Ravenous project</h3>
-                    <button>More info</button>
-                    <a href="https://github.com/Wangdahl/ravenous" target="_blank">Check it out on GitHub <i class="fas fa-external-link-alt"></i></a>
+                    <a href="#popout-three" class="pop-button">More info</a>
+                    <a class="project-external" href="https://github.com/Wangdahl/ravenous" target="_blank">Check it out on GitHub <i class="fas fa-external-link-alt"></i></a>
                 </div>
                 <div class="project" id="project-4">
                     <img src="./resources/excursion.png" alt="">
                     <h3>Excursion project</h3>
-                    <button>More info</button>
-                    <a href="https://wangdahl.github.io/Portfolio-project/" target="_blank">Check it out on GitHub <i class="fas fa-external-link-alt"></i></a>
+                    <a href="#popout-four" class="pop-button">More info</a>
+                    <a class="project-external" href="https://github.com/Wangdahl/excursion" target="_blank">Check it out on GitHub <i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
         </section>
+        
     </main>
+    <div id="popout-one" class="modal">
+        <a href="#project-section" class="exit-overlay"></a>
+        <div class="pop-content">
+            <h2>Minimalistic resumé</h2>
+            <p>A CV / resumé style in a minimalist style for my previous career as an SEO specialist. It´s built mainly using CSS and HTMl but has some minor JavaScript utility implemented.</p>
+            <a href="#project-section" class="close">&times;</a>
+        </div>
+    </div>
+    <div id="popout-two" class="modal">
+        <a href="#project-section" class="exit-overlay"></a>
+        <div class="pop-content">
+            <h2>Rock, Paper, Scissors</h2>
+            <p>This is the Rock, Paper, Scissors x99 project from CodeCademy. I´ve only done the JavaScript as you start this exercise with some code in place.</p>
+            <a href="#project-section" class="close">&times;</a>
+        </div>
+    </div>
+    <div id="popout-three" class="modal">
+        <a href="#project-section" class="exit-overlay"></a>
+        <div class="pop-content">
+            <h2>Ravenous project</h2>
+            <p>Ravenous is a project from CodeCademy focusing on JSX and React. It´s a work in progress as this is a three part ptoject.</p>
+            <a href="#project-section" class="close">&times;</a>
+        </div>
+    </div>
+    <div id="popout-four" class="modal">
+        <a href="#project-section" class="exit-overlay"></a>
+        <div class="pop-content">
+            <h2>Excursion project</h2>
+            <p>This is another CodeCademy project with a focus on CSS and HTMl.</p>
+            <a href="#project-section" class="close">&times;</a>
+        </div>
+    </div>
     <script src="./scripts/script.js"></script>
     <footer class="footer">
         <p class="footer-p">Connect with me -></p>
