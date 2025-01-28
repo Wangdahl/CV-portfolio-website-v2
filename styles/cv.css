@@ -1,0 +1,44 @@
+/* CV Page styling */
+.cv-sec-one h2 {
+    margin: 2.5rem 0 0;
+    padding: 1rem;
+    border-radius: 4px;
+    transition: transform 0.5s ease;
+    width: 400px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.cv-sec-one h2:hover {
+    cursor: pointer;
+    transform: scaleY(1.05);
+    box-shadow: 2px 2px 5px #CC5500;
+}
+.fa-chevron-down {
+    font-size: 2rem;
+    padding-right: 0.5rem;
+    transition: transform 1s ease;
+
+}
+i.open {
+    transition: transform 1s ease;
+    transform: rotate(180deg);
+}
+.cv-sec-one h3 {
+    margin: 2rem 0 1rem;
+}
+.cv-sec-one h4 {
+    margin: 0.5rem 0;
+}
+.cv-sec-one ul {
+    list-style-position: inside;
+}
+
+.hide {
+    display: none;
+}
+
+#exp-box {
+    
+}

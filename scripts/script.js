@@ -8,3 +8,4 @@ document.getElementById('cv-button').addEventListener('click', function() {
     a.click();
     document.body.removeChild(a);
 })
+

@@ -28,7 +28,7 @@ h1 {
     margin: 9rem 0 6rem;
 }
 h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     padding: 2.5rem 0;
 }
 h3 {
@@ -295,18 +295,4 @@ h1 span {
 }
 .close:hover {
     color: #CC5500;
-}
-/* CV Page styling */
-.cv-sec-one h2 {
-    margin: 3.5rem 0 0;
-    padding: 0;
-}
-.cv-sec-one h3 {
-    margin: 2rem 0 1rem;
-}
-.cv-sec-one h4 {
-    margin: 0.5rem 0;
-}
-.cv-sec-one ul {
-    list-style-position: inside;
 }
