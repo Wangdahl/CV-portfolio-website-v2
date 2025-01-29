@@ -31,9 +31,78 @@
         </nav>
     </header>
     
-    <main>
-
+    <main>        
+        <section id="#project-section" class="projects-section">
+            <h2>Portfolio</h2>
+            <div class="projects-div">
+                <a href="#popout-one" >
+                    <div class="project" id="project-1">
+                        <img src="./resources/Minimalistic-portfolio.png" alt="">
+                        <h3 class="test">Minimalist resumé</h3>
+                        <p>HTML, CSS & JS</p>
+                    </div>
+                </a>
+                <a href="#popout-two" >
+                    <div class="project" id="project-2">
+                        <img src="./resources/rock-paper-scissor-x99.png" alt="">
+                        <h3 class="test">Rock, Paper, Scissors</h3>
+                        <p>JavaScript</p>
+                    </div>
+                </a>
+                <a href="#popout-three" >
+                    <div class="project" id="project-3">
+                        <img src="./resources/ravenous.png" alt="">
+                        <h3 class="test">Ravenous project</h3>                    
+                        <p>HTML, CSS & JSX</p>
+                    </div>
+                </a>
+                <a href="#popout-four">
+                    <div class="project" id="project-4">
+                        <img src="./resources/excursion.png" alt="">
+                        <h3 class="test">Excursion project</h3>
+                        <p>HTML & CSS</p>
+                    </div>
+                </a>
+            </div>
+        </section>
     </main>
+        <div id="popout-one" class="modal">
+            <a href="#project-section" class="exit-overlay"></a>
+            <div class="pop-content">
+                <a href="#project-section" class="close">&times;</a>
+                <h2>Minimalistic resumé</h2>
+                <p>A CV / resumé style in a minimalist style for my previous career as an SEO specialist. It´s built mainly using CSS and HTMl but has some minor JavaScript utility implemented. Take a look at <a class="project-external" href="https://wangdahl.github.io/Portfolio-project/" target="_blank">GitHub Pages <i class="fas fa-external-link-alt"></i></a> or check the code through the button bellow.</p>
+                <a href="https://github.com/Wangdahl/Portfolio-project" class="pop-button" target="_blank">GitHub <i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+        <div id="popout-two" class="modal">
+            <a href="#project-section" class="exit-overlay"></a>
+            <div class="pop-content">
+                <a href="#project-section" class="close">&times;</a>
+                <h2>Rock, Paper, Scissors</h2>
+                <p>This is the Rock, Paper, Scissors x99 project from CodeCademy. I´ve only done the JavaScript as you start this exercise with some code in place.</p>
+                <a href="https://github.com/Wangdahl/rock-paper-scissors-x99" class="pop-button" target="_blank">GitHub <i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+        <div id="popout-three" class="modal">
+            <a href="#project-section" class="exit-overlay"></a>
+            <div class="pop-content">
+                <a href="#project-section" class="close">&times;</a>
+                <h2>Ravenous project</h2>
+                <p>Ravenous is a project from CodeCademy focusing on JSX and React. It´s a work in progress as this is a three part ptoject.</p>
+                <a class="pop-button" href="https://github.com/Wangdahl/ravenous" target="_blank">GitHub <i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+        <div id="popout-four" class="modal">
+            <a href="#project-section" class="exit-overlay"></a>
+            <div class="pop-content">
+                <a href="#project-section" class="close">&times;</a>
+                <h2>Excursion project</h2>
+                <p>This is another CodeCademy project with a focus on CSS and HTMl.</p>
+                <a class="pop-button" href="https://github.com/Wangdahl/excursion" target="_blank">GitHub <i class="fas fa-external-link-alt"></i></a>
+            </div>
+        </div>
+
     
     <script src="./scripts/script.js"></script>
     <footer class="footer">

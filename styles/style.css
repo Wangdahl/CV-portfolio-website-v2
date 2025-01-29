@@ -46,14 +46,14 @@ button {
     padding: 0.5rem 1rem;
     border: none;
     border-radius: 4px;
-    box-shadow: 2px 2px 5px #CC5500;
+    box-shadow: 2px 2px 3px #CC5500;
     transition: all 1s ease;
 }
 button:hover {
     cursor: pointer;
     background-color: #CC5500;
     color: #FFF8F4;
-    box-shadow: 2px 2px 5px #1A0B03;
+    box-shadow: 2px 2px 3px #1A0B03;
 }
 button:active {
     transform: scale(1.05);
@@ -164,7 +164,7 @@ h1 span {
     width: 300px;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 2px 2px 5px #CC5500;
+    box-shadow: 2px 2px 3px #CC5500;
 }
 .profile-text {
     display: flex;
@@ -191,7 +191,11 @@ h1 span {
     flex-direction: column;
     text-align: center;
     border-radius: 4px;
-    box-shadow: 2px 2px 5px #CC5500;
+    box-shadow: 2px 2px 3px #CC5500;
+    transition: transform 0.5s ease;
+}
+.project:hover {
+    transform: scale(1.1);
 }
 .project img {
     max-width: 100%;
@@ -206,14 +210,14 @@ h1 span {
     margin: 2rem 0;
     padding: 0.5rem 1rem;
     border-radius: 4px;
-    box-shadow: 2px 2px 5px #CC5500;
+    box-shadow: 2px 2px 3px #CC5500;
     transition: all 1s ease;
 }
 .pop-button:hover {
     cursor: pointer;
     background-color: #CC5500;
     color: #FFF8F4;
-    box-shadow: 2px 2px 5px #1A0B03;
+    box-shadow: 2px 2px 3px #1A0B03;
 }
 .pop-button:active {
     transform: scale(1.05);
@@ -229,10 +233,9 @@ h1 span {
 .fa-external-link-alt {
     font-size: 0.8rem;
     color: inherit;
+    background-color: inherit;
 }
-.fa-external-link-alt:hover {
-    color: inherit;
-}
+
 
 /* Modal pop-ups */
 .modal {
@@ -244,7 +247,7 @@ h1 span {
     width: 450px;
     height: 550px;
     background-color: #FFF8F4;
-    box-shadow: 2px 2px 5px #CC5500;
+    box-shadow: 2px 2px 3px #CC5500;
     border-radius: 4px;
     justify-content: flex-start;
     align-items: center;
@@ -283,16 +286,29 @@ h1 span {
     height: 100%;
     z-index: 6;
 }
+
+.pop-content h2 {
+    padding-top: 1rem;
+}
 .close {
     display: inline-block;
     color: #1A0B03;
     text-decoration: none;
     text-transform: color 1s ease;
-    margin-top: auto;
+    margin-top: 1.5rem;
     align-self: flex-end;
     font-size: 2rem;
     padding: 0.5rem;
 }
 .close:hover {
     color: #CC5500;
+}
+
+
+div h3.test {
+    margin: 1.5rem 0 0;
+}
+.project p {
+    padding: 0.5rem;
+    margin: 0.5rem 0 1rem;
 }

@@ -116,18 +116,18 @@
     }
 
     @keyframes typing-1 {
-        0%   { width: 0;           border-right: 3px solid #1A0B03; }
-        99%  { width: 6ch;         border-right: 3px solid #1A0B03; }
-        100% { width: 6ch;         border-right: none;              }
+        0%   { width: 0; border-right: 3px solid #1A0B03; }
+        99%  { width: 6ch; border-right: 3px solid #1A0B03; }
+        100% { width: 6ch; border-right: none;              }
     }
     @keyframes typing-2 {
-        0%   { width: 0;           border-right: 3px solid #1A0B03; }
-        99%  { width: 10ch;        border-right: 3px solid #1A0B03; }
-        100% { width: 10ch;        border-right: none;              }
+        0%   { width: 0; border-right: 3px solid #1A0B03; }
+        99%  { width: 10ch; border-right: 3px solid #1A0B03; }
+        100% { width: 10ch; border-right: none;              }
     }
     @keyframes typing-3 {
-        0%   { width: 0;           border-right: 3px solid #1A0B03; }
-        100% { width: 15ch;        border-right: 3px solid #1A0B03; }
+        0%   { width: 0; border-right: 3px solid #1A0B03; }
+        100% { width: 15ch; border-right: 3px solid #1A0B03; }
     }
     @keyframes blink {
         50% {
@@ -166,13 +166,28 @@
     .fa-external-link-alt {
         font-size: 0.7rem;
     }
+    .modal {
+        width: 300px;
+        height: 500px;
+    }
+    .pop-content h2 {
+        padding: 1rem 0;
+    }
+    .close {
+        margin-top: 1rem;
+        padding: 0 0 0 1rem;
+    }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 320px) {
     html {
         font-size: 14px;
     }
     h1 span {
         font-size: 1.2rem;
+    }
+    .modal {
+        width: 260px;
+        height: 500px;
     }
 }
