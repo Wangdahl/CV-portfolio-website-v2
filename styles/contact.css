@@ -1,6 +1,11 @@
 /* Contact page specific styling */
 
 .contact-div {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+}
+.contact-content {
     max-width: 50%;
 }
 .contact-ul {
@@ -18,12 +23,24 @@
     line-height: 1.5rem;
 }
 .contact-pic-div {
-    max-width: 400px;
-    overflow: hidden;
-    border-radius: 4px;
+
+    border-radius: 5px;
+    margin: 2rem 7rem 2rem 0;
 }
 .contact-pic-div img {
-    max-width: 100%;
-    border-radius: 4px;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px #CC5500;
+}
 
+.moving-arrow {
+    color: inherit;
+    font-size: inherit;
+    transition: transform 0.5s ease;
+    padding-left: 0.5rem;
+}
+.contact-ul a:hover .moving-arrow {
+    /* transform: translateX(0.5rem); */
+    animation: moveArrow 0.8s linear infinite;
 }
