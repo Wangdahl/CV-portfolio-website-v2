@@ -13,24 +13,28 @@
 </head>
 <body>
     <header class="the-header">
+        <!--Main nav-->
         <nav class="main-nav nav-big-screen" aria-label="Main Navigation">
             <ul>
                 <li><a href="#" class="current-page">Home</a></li>
                 <li><a href="/cv.html">CV</a></li>
-                <li><a href="/who-am-i.html">Who am I?</a></li>
+                <li><a href="/contact.html">Contact</a></li>
             </ul>
         </nav>
+        <!--Movile nav-->
         <nav class="main-nav nav-mobile" aria-label="Main Navigation">
             <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
             <ul class="nav-ul-mob">
                 <li><a href="#" class="current-page">Home</a></li>
                 <li><a href="/cv.html">CV</a></li>
-                <li><a href="/who-am-i.html">Who am I?</a></li>
+                <li><a href="/contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
+    <!--Main content-->
     <main>
+        <!--Section 1 brief intro + profile pic-->
         <section class="banner">
             <h1><span>Hello! </span><span>My name is </span><span>Melker Wångdahl</span></h1>
             <div id="banner-div">
@@ -44,71 +48,86 @@
                 </div>
             </div>
         </section>
+        <!--Section 2 contains the projects / portfolio-->
         <section id="#project-section" class="projects-section">
             <h2>Portfolio</h2>
             <div class="projects-div">
-                <div class="project" id="project-1">
-                    <img src="./resources/Minimalistic-portfolio.png" alt="">
-                    <h3>Minimalist resumé</h3>
-                    <a href="#popout-one" class="pop-button">More info</a>
-                    <a class="project-external" href="https://github.com/Wangdahl/Portfolio-project" target="_blank">Check it out on GitHub <i class="fas fa-external-link-alt"></i></a>
-                </div>
-                <div class="project" id="project-2">
-                    <img src="./resources/rock-paper-scissor-x99.png" alt="">
-                    <h3>Rock, Paper, Scissors</h3>
-                    <a href="#popout-two" class="pop-button">More info</a>
-                    <a class="project-external" href="https://github.com/Wangdahl/rock-paper-scissors-x99" target="_blank">Check it out on GitHub <i class="fas fa-external-link-alt"></i></a>
-                </div>
-                <div class="project" id="project-3">
-                    <img src="./resources/ravenous.png" alt="">
-                    <h3>Ravenous project</h3>
-                    <a href="#popout-three" class="pop-button">More info</a>
-                    <a class="project-external" href="https://github.com/Wangdahl/ravenous" target="_blank">Check it out on GitHub <i class="fas fa-external-link-alt"></i></a>
-                </div>
-                <div class="project" id="project-4">
-                    <img src="./resources/excursion.png" alt="">
-                    <h3>Excursion project</h3>
-                    <a href="#popout-four" class="pop-button">More info</a>
-                    <a class="project-external" href="https://github.com/Wangdahl/excursion" target="_blank">Check it out on GitHub <i class="fas fa-external-link-alt"></i></a>
-                </div>
+                <!--Wrapping divs in a tags to make cards clickable and bring up popup info-->
+                <a href="#popout-one" >
+                    <div class="project" id="project-1">
+                        <img src="./resources/Minimalistic-portfolio.png" alt="">
+                        <h3>Minimalist resumé</h3>
+                        <p>HTML, CSS & JS</p>
+                        <p class="read-more">Read more<i class="fas fa-arrow-right moving-arrow"></i></p>
+                    </div>
+                </a>
+                <a href="#popout-two" >
+                    <div class="project" id="project-2">
+                        <img src="./resources/rock-paper-scissor-x99.png" alt="">
+                        <h3>Rock, Paper, Scissors</h3>
+                        <p>JavaScript</p>
+                        <p class="read-more">Read more<i class="fas fa-arrow-right moving-arrow"></i></p>
+                    </div>
+                </a>
+                <a href="#popout-three" >
+                    <div class="project" id="project-3">
+                        <img src="./resources/ravenous.png" alt="">
+                        <h3>Ravenous project</h3>                    
+                        <p>HTML, CSS & JSX</p>
+                        <p class="read-more">Read more<i class="fas fa-arrow-right moving-arrow"></i></p>
+                    </div>
+                </a>
+                <a href="#popout-four">
+                    <div class="project" id="project-4">
+                        <img src="./resources/excursion.png" alt="">
+                        <h3>Excursion project</h3>
+                        <p>HTML & CSS</p>
+                        <p class="read-more">Read more<i class="fas fa-arrow-right moving-arrow"></i></p>
+                    </div>
+                </a>
             </div>
         </section>
-        
     </main>
-    <div id="popout-one" class="modal">
-        <a href="#project-section" class="exit-overlay"></a>
+    <!--Modal popup info for each project, Github links etc.-->
+    <aside id="popout-one" class="modal">
+        <a href="#project-section" class="exit-overlay"></a> <!--Overlay that shows behind the popups and turns the background into an "exit button"-->
         <div class="pop-content">
             <a href="#project-section" class="close">&times;</a>
             <h2>Minimalistic resumé</h2>
             <p>A CV / resumé style in a minimalist style for my previous career as an SEO specialist. It´s built mainly using CSS and HTMl but has some minor JavaScript utility implemented. Take a look at <a class="project-external" href="https://wangdahl.github.io/Portfolio-project/" target="_blank">GitHub Pages <i class="fas fa-external-link-alt"></i></a> or check the code through the button bellow.</p>
             <a href="https://github.com/Wangdahl/Portfolio-project" class="pop-button" target="_blank">GitHub <i class="fas fa-external-link-alt"></i></a>
         </div>
-    </div>
-    <div id="popout-two" class="modal">
+    </aside>
+    <aside id="popout-two" class="modal">
         <a href="#project-section" class="exit-overlay"></a>
         <div class="pop-content">
+            <a href="#project-section" class="close">&times;</a>
             <h2>Rock, Paper, Scissors</h2>
             <p>This is the Rock, Paper, Scissors x99 project from CodeCademy. I´ve only done the JavaScript as you start this exercise with some code in place.</p>
-            <a href="#project-section" class="close">&times;</a>
+            <a href="https://github.com/Wangdahl/rock-paper-scissors-x99" class="pop-button" target="_blank">GitHub <i class="fas fa-external-link-alt"></i></a>
         </div>
-    </div>
-    <div id="popout-three" class="modal">
+    </aside>
+    <aside id="popout-three" class="modal">
         <a href="#project-section" class="exit-overlay"></a>
         <div class="pop-content">
+            <a href="#project-section" class="close">&times;</a>
             <h2>Ravenous project</h2>
-            <p>Ravenous is a project from CodeCademy focusing on JSX and React. It´s a work in progress as this is a three part ptoject.</p>
-            <a href="#project-section" class="close">&times;</a>
+            <p>Ravenous is a project from CodeCademy focusing on JSX and React. It´s a work in progress as this is a three part project.</p>
+            <a class="pop-button" href="https://github.com/Wangdahl/ravenous" target="_blank">GitHub <i class="fas fa-external-link-alt"></i></a>
         </div>
-    </div>
-    <div id="popout-four" class="modal">
+    </aside>
+    <aside id="popout-four" class="modal">
         <a href="#project-section" class="exit-overlay"></a>
         <div class="pop-content">
+            <a href="#project-section" class="close">&times;</a>
             <h2>Excursion project</h2>
             <p>This is another CodeCademy project with a focus on CSS and HTMl.</p>
-            <a href="#project-section" class="close">&times;</a>
+            <a class="pop-button" href="https://github.com/Wangdahl/excursion" target="_blank">GitHub <i class="fas fa-external-link-alt"></i></a>
         </div>
-    </div>
+    </aside>
+    <!--Loading JS-->
     <script src="./scripts/script.js"></script>
+    <!--Footer starts here-->
     <footer class="footer">
         <p class="footer-p">Connect with me -></p>
         <ul id="footer-connect">

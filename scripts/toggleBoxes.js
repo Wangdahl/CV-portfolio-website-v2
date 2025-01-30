@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const infoBoxCert = document.getElementById('cert-box');
 
     const toggleInfo = (domElement) => {
-        domElement.classList.toggle('hide');
+        domElement.classList.toggle('open');
     }
 
     clickHeadingExp.addEventListener('click', () => {
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Flipping heading arrow 
+// Flipping heading arrow on cv page
 document.addEventListener('DOMContentLoaded', () => {
     document.querySelectorAll('.rotate').forEach(heading => {
         heading.addEventListener('click', () => {

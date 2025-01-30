@@ -12,8 +12,11 @@
 }
 .cv-sec-one h2:hover {
     cursor: pointer;
-    transform: scaleY(1.05);
+    transform: scale(1.05);
     box-shadow: 0 1px 2px #CC5500;
+}
+.cv-sec-one div {
+    margin: 0 1rem;
 }
 .fa-chevron-down {
     font-size: 2rem;
@@ -36,9 +39,11 @@ i.open {
 }
 
 .hide {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+}
+.hide.open {
+    max-height: 1000px;
 }
 
-#exp-box {
-    
-}

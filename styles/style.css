@@ -38,6 +38,7 @@ a {
     text-decoration: none;
     transition: all 0.5s ease;
 }
+/* Buttons */
 a:hover {
     color: #CC5500;
 }
@@ -203,8 +204,41 @@ h1 span {
     border-top-right-radius: 4px;
 }
 .project h3 {
-    margin: 1rem 0 1rem;
+    margin: 1.5rem 0 0;
 }
+.project p {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+.project .read-more {
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin: 0.5rem;
+    font-size: 0.9rem;
+}
+.project .read-more:hover {
+    color: #CC5500;
+    text-decoration: underline;
+}
+.read-more .moving-arrow {
+    color: #CC5500;
+    font-size: inherit;
+    transition: transform 0.5s ease;
+    padding-left: 0.5rem;
+}
+.read-more:hover .moving-arrow {
+    /* transform: translateX(0.5rem); */
+    animation: moveArrow 0.8s linear infinite;
+}
+@keyframes moveArrow {
+    0% { transform: translateX(0); opacity: 1;}
+    50% { transform: translateX(10px); opacity: 1;}
+    45% { opacity: 0.5; }
+    55% { opacity: 0; }
+    65% { transform: translateX(-10px); opacity: 0;}
+    100% { transform: translateX(0); opacity: 1;}
+}
+/* Styling a element in project pop-up cards to appear as buttons */
 .pop-button {
     align-self: center;
     margin: 2rem 0;
@@ -223,13 +257,7 @@ h1 span {
     transform: scale(1.05);
     transition: transform 0.3s ease;
 }
-.project a {
-    display: inline-flex;
-    align-items: center;
-    gap: 6px;
-    align-self: center;
-    margin-bottom: 2rem;
-}
+
 .fa-external-link-alt {
     font-size: 0.8rem;
     color: inherit;
@@ -270,6 +298,7 @@ h1 span {
         transform: scale(1);
     }
 }
+
 .exit-overlay {
     position: fixed;
     width: 100vw;
@@ -302,13 +331,4 @@ h1 span {
 }
 .close:hover {
     color: #CC5500;
-}
-
-
-div h3.test {
-    margin: 1.5rem 0 0;
-}
-.project p {
-    padding: 0.5rem;
-    margin: 0.5rem 0 1rem;
 }
