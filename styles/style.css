@@ -238,31 +238,6 @@ h1 span {
     65% { transform: translateX(-10px); opacity: 0;}
     100% { transform: translateX(0); opacity: 1;}
 }
-/* Styling a element in project pop-up cards to appear as buttons */
-.pop-button {
-    align-self: center;
-    margin: 2rem 0;
-    padding: 0.5rem 1rem;
-    border-radius: 4px;
-    box-shadow: 2px 2px 3px #CC5500;
-    transition: all 1s ease;
-}
-.pop-button:hover {
-    cursor: pointer;
-    background-color: #CC5500;
-    color: #FFF8F4;
-    box-shadow: 2px 2px 3px #1A0B03;
-}
-.pop-button:active {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-
-.fa-external-link-alt {
-    font-size: 0.8rem;
-    color: inherit;
-    background-color: inherit;
-}
 
 
 /* Modal pop-ups */
@@ -319,6 +294,7 @@ h1 span {
 .pop-content h2 {
     padding-top: 1rem;
 }
+/* X icon to close popup */
 .close {
     display: inline-block;
     color: #1A0B03;
@@ -331,4 +307,30 @@ h1 span {
 }
 .close:hover {
     color: #CC5500;
+}
+
+/* Styling a element in project pop-up cards to appear as buttons */
+.pop-button {
+    align-self: center;
+    margin: auto 0 2.5rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    box-shadow: 2px 2px 3px #CC5500;
+    transition: all 1s ease;
+}
+.pop-button:hover {
+    cursor: pointer;
+    background-color: #CC5500;
+    color: #FFF8F4;
+    box-shadow: 2px 2px 3px #1A0B03;
+}
+.pop-button:active {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.fa-external-link-alt {
+    font-size: 0.8rem;
+    color: inherit;
+    background-color: inherit;
 }

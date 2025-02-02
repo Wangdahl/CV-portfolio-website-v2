@@ -1,25 +1,30 @@
-/* Contact page specific styling */
+/* Contact page specific styling, mobile adaptation in mobile.css*/
 
 .contact-div {
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-end;
+    align-items: center;
 }
 .contact-content {
     max-width: 50%;
 }
 .contact-ul {
     list-style: none;
+    padding: 1rem 0;
 }
 .contact-ul li {
     padding-top: 1rem;
 }
-.contact-ul a, .contact-ul .fas, .contact-ul .fab {
+.contact-ul a {
+    font-size: 1.5rem;
+}
+.contact-ul .fas, .contact-ul .fab {
     font-size: 1.5rem;
     padding: 0 1rem;
 }
 .contact-p {
-    padding: 2rem;
+    padding: 1rem;
     line-height: 1.5rem;
 }
 .contact-pic-div {
