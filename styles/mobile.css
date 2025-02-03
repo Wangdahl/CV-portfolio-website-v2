@@ -6,7 +6,11 @@
         gap: 6rem;
     }
 }
-
+@media (max-width: 1210px) {
+    .banner h1 span, h1 {
+        font-size: 2.5rem;
+    }
+}
 @media (max-width: 1080px) {
     /*Sitewide */
     * {
@@ -24,6 +28,9 @@
         font-size: 1rem;
     }
     /* Navigation */
+    .darkMode-label {
+        margin-left: 2rem;
+    }
     .nav-big-screen {
         display: none;
     }
@@ -32,8 +39,9 @@
         position: relative;
 
     }
+    /* Creating burger menu */
     .menu-icon {
-        background-color: rgba(255, 248, 244, 0.8);
+        background-color: var(--background-color);
         display: block;
         font-size: 2rem;
         cursor: pointer;
@@ -41,7 +49,7 @@
         top: 0;
         right: 0;
         padding: 0.5rem 2rem 0;
-        padding-left: 100%;
+        margin-left: 100%;
     }
     .menu-checkbox {
         display: none;
@@ -50,7 +58,7 @@
         display: none;
         flex-direction: column;
         gap: 0.5rem;
-        background-color: rgba(255, 248, 244, 0.8);
+        background-color: var(--background-color);
         margin: 1rem;
         padding: 1rem;
         position: absolute;
@@ -89,13 +97,12 @@
         word-break: break-all;
         overflow-wrap: break-word;
     }
-    /* Section 1 (H1 + presentation) */
+    /* Index.html - Section 1 (H1 + presentation) */
     /* Adjusting H1 animation for mobile */
     .banner h1 {
         margin: 7rem 0 4rem;
     }
     .banner h1 span {
-        font-size: 1.7rem;
         display: block;
         overflow: hidden;
         white-space: nowrap;
@@ -116,25 +123,25 @@
     }
 
     @keyframes typing-1 {
-        0%   { width: 0; border-right: 3px solid #1A0B03; }
-        99%  { width: 6ch; border-right: 3px solid #1A0B03; }
+        0%   { width: 0; border-right: 3px solid var(--text-color); }
+        99%  { width: 6ch; border-right: 3px solid var(--text-color); }
         100% { width: 6ch; border-right: none;              }
     }
     @keyframes typing-2 {
-        0%   { width: 0; border-right: 3px solid #1A0B03; }
-        99%  { width: 10ch; border-right: 3px solid #1A0B03; }
+        0%   { width: 0; border-right: 3px solid var(--text-color); }
+        99%  { width: 10ch; border-right: 3px solid var(--text-color); }
         100% { width: 10ch; border-right: none;              }
     }
     @keyframes typing-3 {
-        0%   { width: 0; border-right: 3px solid #1A0B03; }
-        100% { width: 15ch; border-right: 3px solid #1A0B03; }
+        0%   { width: 0; border-right: 3px solid var(--text-color); }
+        100% { width: 15ch; border-right: 3px solid var(--text-color); }
     }
     @keyframes blink {
         50% {
             border-color: transparent;
         }
     }
-    /* Adjusting presentation layour */
+    /* Adjusting presentation layout */
     #banner-div {
         flex-direction: column;
         justify-content: center;
@@ -148,12 +155,13 @@
     }
 
     /*Project section */
-    /* Switching from grid to flex */
+
     .projects-div {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+        gap: 3rem;
+    }
+    .popout-link {
+        max-width: 300px;
+        justify-self: center;
     }
 
     .project {
@@ -176,6 +184,20 @@
     .close {
         margin-top: 1rem;
         padding: 0 0 0 1rem;
+    }
+}
+@media (max-width: 720px) {
+        /* Switching from grid to flex */
+    .projects-div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media (max-width: 480px) {
+    .banner h1 span, h1 {
+        font-size: 1.7rem;
     }
 }
 

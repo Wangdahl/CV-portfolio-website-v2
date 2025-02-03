@@ -15,6 +15,12 @@
     <header class="the-header">
         <!--Main nav-->
         <nav class="main-nav nav-big-screen" aria-label="Main Navigation">
+            <!--Dark mode button-->
+            <input class="darkMode-input" type="checkbox" id="toggleDarkMode"/>
+            <label class="darkMode-label" for="toggleDarkMode">
+                <img src="./resources/sun-2-svgrepo-com.svg" alt="sun-light-mode-icon" class="icon icon-sun">
+                <img src="./resources/moon-svgrepo-com.svg" alt="moon-dark-mode-icon"class="icon icon-moon">
+            </label>
             <ul>
                 <li><a href="#" class="current-page">Home</a></li>
                 <li><a href="/cv.html">CV</a></li>
@@ -23,6 +29,12 @@
         </nav>
         <!--Movile nav-->
         <nav class="main-nav nav-mobile" aria-label="Main Navigation">
+            <!--Dark mode button-->
+            <input class="darkMode-input" type="checkbox" id="toggleDarkModeMobile"/>
+            <label class="darkMode-label" for="toggleDarkModeMobile">
+                <img src="./resources/sun-2-svgrepo-com.svg" alt="sun-light-mode-icon" class="icon icon-sun">
+                <img src="./resources/moon-svgrepo-com.svg" alt="moon-dark-mode-icon"class="icon icon-moon">
+            </label>
             <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
             <ul class="nav-ul-mob">
@@ -54,7 +66,7 @@
             <h2>Portfolio</h2>
             <div class="projects-div">
                 <!--Wrapping divs in a tags to make cards clickable and bring up popup info-->
-                <a href="#popout-one" >
+                <a class="popout-link" href="#popout-one" >
                     <div class="project" id="project-1">
                         <img src="./resources/Minimalistic-portfolio.png" alt="">
                         <h3>Minimalist resumé</h3>
@@ -62,7 +74,7 @@
                         <p class="read-more">Read more<i class="fas fa-arrow-right moving-arrow"></i></p>
                     </div>
                 </a>
-                <a href="#popout-two" >
+                <a class="popout-link" href="#popout-two" >
                     <div class="project" id="project-2">
                         <img src="./resources/rock-paper-scissor-x99.png" alt="">
                         <h3>Rock, Paper, Scissors</h3>
@@ -70,7 +82,7 @@
                         <p class="read-more">Read more<i class="fas fa-arrow-right moving-arrow"></i></p>
                     </div>
                 </a>
-                <a href="#popout-three" >
+                <a class="popout-link" href="#popout-three" >
                     <div class="project" id="project-3">
                         <img src="./resources/ravenous.png" alt="">
                         <h3>Ravenous project</h3>                    
@@ -78,7 +90,7 @@
                         <p class="read-more">Read more<i class="fas fa-arrow-right moving-arrow"></i></p>
                     </div>
                 </a>
-                <a href="#popout-four">
+                <a class="popout-link" href="#popout-four">
                     <div class="project" id="project-4">
                         <img src="./resources/excursion.png" alt="">
                         <h3>Excursion project</h3>
@@ -126,8 +138,6 @@
             <a class="pop-button" href="https://github.com/Wangdahl/excursion" target="_blank">GitHub <i class="fas fa-external-link-alt"></i></a>
         </div>
     </aside>
-    <!--Loading JS-->
-    <script src="./scripts/script.js"></script>
     <!--Footer starts here-->
     <footer class="footer">
         <p class="footer-p">Connect with me -></p>
@@ -137,5 +147,8 @@
             <li><a href="https://github.com/Wangdahl" target="_blank"><i class="fab fa-github"></i>Wangdahl</a></li>
         </ul>
     </footer>
+    <!--Loading JS-->
+    <script src="./scripts/script.js"></script>
+    <script src="./scripts/dark-mode.js"></script>
 </body>
 </html>

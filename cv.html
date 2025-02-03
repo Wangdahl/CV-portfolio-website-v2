@@ -16,6 +16,12 @@
     <!--Main nav-->
     <header class="the-header">
         <nav class="main-nav nav-big-screen" aria-label="Main Navigation">
+        <!--Dark mode button-->
+        <input class="darkMode-input" type="checkbox" id="toggleDarkMode"/>
+        <label class="darkMode-label" for="toggleDarkMode">
+            <img src="./resources/sun-2-svgrepo-com.svg" alt="sun-light-mode-icon" class="icon icon-sun">
+            <img src="./resources/moon-svgrepo-com.svg" alt="moon-dark-mode-icon"class="icon icon-moon">
+        </label>
             <ul>
                 <li><a href="/index.html">Home</a></li>
                 <li><a href="#" class="current-page">CV</a></li>
@@ -24,11 +30,17 @@
         </nav>
         <!--Movile nav-->
         <nav class="main-nav nav-mobile" aria-label="Main Navigation">
+            <!--Dark mode button-->
+            <input class="darkMode-input" type="checkbox" id="toggleDarkModeMobile"/>
+            <label class="darkMode-label" for="toggleDarkModeMobile">
+                <img src="./resources/sun-2-svgrepo-com.svg" alt="sun-light-mode-icon" class="icon icon-sun">
+                <img src="./resources/moon-svgrepo-com.svg" alt="moon-dark-mode-icon"class="icon icon-moon">
+            </label>
             <input type="checkbox" id="menu-toggle" class="menu-checkbox" />
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
             <ul class="nav-ul-mob">
-                <li><a href="#" class="current-page">Home</a></li>
-                <li><a href="/cv.html">CV</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="#" class="current-page">CV</a></li>
                 <li><a href="/contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -111,5 +123,6 @@
     </footer>
     <!--Loading JS file-->
     <script src="./scripts/toggleBoxes.js"></script>
+    <script src="./scripts/dark-mode.js"></script>
 </body>
 </html>
