@@ -1,0 +1,213 @@
+/* Index / home page styling, mobile adaptations in mobile.css*/
+/* Banner section */
+h1 span {
+    font-size: 3rem;
+}
+/* Fixing H1 typewriter animation without affecting smaller screens */
+@media (min-width: 1081px) {
+    .banner h1 {
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 3px solid var(--text-color);
+        animation: typing 4s steps(33, end), blink 1s step-end infinite;
+    }
+    @keyframes typing {
+        from {
+            width: 0;
+        }
+        to {
+            width: 33ch;
+        }
+    }
+    @keyframes blink {
+        50% {
+            border-color: transparent;
+        }
+    }
+}
+
+#banner-div {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center;
+    margin: 2rem 0 4rem;
+}
+
+.profile-div {
+    margin: 2rem 7rem 2rem 0;
+}
+.profile-pic {
+    width: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 1.5px 1.5px 5px var(--primary-color);
+}
+.profile-text {
+    display: flex;
+    flex-direction: column;
+}
+#cv-button {
+    align-self: center;
+    margin: 3rem;
+}
+
+/* Portfolio section */
+.projects-section {
+    margin: 8rem 0 8rem;
+}
+
+.projects-div {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 1rem 0;
+}
+.project {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    border-radius: 4px;
+    box-shadow: 1.5px 1.5px 5px var(--primary-color);
+    transition: transform 0.5s ease;
+}
+.project:hover {
+    transform: scale(1.1);
+}
+.project img {
+    max-width: 100%;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.project h3 {
+    margin: 1.5rem 0 0;
+}
+.project p {
+    padding: 0.5rem;
+    margin: 0.5rem 0;
+}
+.project .read-more {
+    justify-self: flex-start;
+    align-self: flex-start;
+    margin: 0.5rem;
+    font-size: 0.9rem;
+}
+.project .read-more:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+.read-more .moving-arrow {
+    color: var(--primary-color);
+    font-size: inherit;
+    transition: transform 0.5s ease;
+    padding-left: 0.5rem;
+}
+.read-more:hover .moving-arrow {
+    /* transform: translateX(0.5rem); */
+    animation: moveArrow 0.8s linear infinite;
+}
+@keyframes moveArrow {
+    0% { transform: translateX(0); opacity: 1;}
+    50% { transform: translateX(10px); opacity: 1;}
+    45% { opacity: 0.5; }
+    55% { opacity: 0; }
+    65% { transform: translateX(-10px); opacity: 0;}
+    100% { transform: translateX(0); opacity: 1;}
+}
+
+
+/* Modal pop-ups */
+.modal {
+    display: none;
+    position: fixed;
+    top: 8rem;
+    align-self: center;
+    justify-self: center;
+    width: 450px;
+    height: 550px;
+    background-color: var(--background-color);
+    box-shadow: 1.5px 1.5px 5px var(--primary-color);
+    border-radius: 4px;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: left;
+    z-index: 5;
+    opacity: 0;
+    transform: scale(0.5);
+}
+.modal:target {
+    display: flex;
+    animation: fade-in 0.5s ease forwards;
+}
+@keyframes fade-in {
+    from {
+        opacity: 0;
+        transform: scale(0.5);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.exit-overlay {
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: transparent;
+    z-index: 5;
+    transform: translateX(-35%);
+    cursor: default;
+}
+.pop-content {
+    margin: 2rem;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: 6;
+}
+
+.pop-content h2 {
+    padding-top: 1rem;
+}
+/* X icon to close popup */
+.close {
+    display: inline-block;
+    color: var(--text-color);
+    text-decoration: none;
+    text-transform: color 0.5s ease;
+    margin-top: 1.5rem;
+    align-self: flex-end;
+    font-size: 2rem;
+    padding: 0.5rem;
+}
+.close:hover {
+    color: var(--primary-color);
+}
+
+/* Styling a element in project pop-up cards to appear as buttons */
+.pop-button {
+    align-self: center;
+    margin: auto 0 2.5rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    box-shadow: 1.5px 1.5px 5px var(--primary-color);
+    transition: all 0.5s ease;
+}
+.pop-button:hover {
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: var(--background-color);
+    box-shadow: 1.5px 1.5px 5px var(--primary-color);
+}
+.pop-button:active {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+.fa-external-link-alt {
+    font-size: 0.8rem;
+    color: inherit;
+    background-color: inherit;
+}
