@@ -5,6 +5,14 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 6rem;
     }
+
+    /* Contact page links */
+    .contact-ul a {
+        font-size: 1.1rem;
+    }
+    .contact-content {
+        max-width: 100%;
+    }
 }
 @media (max-width: 1210px) {
     .banner h1 span, h1 {
@@ -29,7 +37,7 @@
     }
     /* Navigation */
     .darkMode-label {
-        margin-left: 2rem;
+        margin: 0.3rem 2rem 1rem 2rem;
     }
     .nav-big-screen {
         display: none;
@@ -83,6 +91,7 @@
     }
     #footer-connect {
         flex-direction: column;
+        gap: 1rem;
     }
     .fa-linkedin, .fa-envelope, .fa-github {
         margin-right: 6px;
@@ -185,6 +194,19 @@
         margin-top: 1rem;
         padding: 0 0 0 1rem;
     }
+
+    /*  Contact page styling */
+    .contact-section {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    .contact-p, .contact-ul .fas, .contact-ul .fab {
+        padding: 0;
+    }
+    .fa-arrow-right {
+        margin-left: 1rem;
+    }
 }
 @media (max-width: 720px) {
         /* Switching from grid to flex */
@@ -194,10 +216,30 @@
         justify-content: center;
         align-items: center;
     }
+
 }
 @media (max-width: 480px) {
+    h1 {
+        margin: 4.5rem 0 3rem;
+    }
     .banner h1 span, h1 {
         font-size: 1.7rem;
+    }
+
+    /* Adjusting box width in CV section */
+    .cv-sec-one h2 {
+        width: 280px;
+    }
+    /* Contact page styling */
+    .contact-pic-div {
+        margin: 2rem 0;
+    }
+    .contact-pic-div img {
+        width: 100%;
+        max-width: 300px;
+    }
+    .contact-ul a {
+        font-size: 0.9rem;
     }
 }
 
@@ -211,5 +253,10 @@
     .modal {
         width: 260px;
         height: 500px;
+    }
+
+    /* Adjusting box width in CV section */
+    .cv-sec-one h2 {
+        width: 240px;
     }
 }
