@@ -1,39 +1,35 @@
 
 /* Showing and hiding experience, skills, education on cv page */
 document.addEventListener('DOMContentLoaded', () => {
-
-    const clickHeadingExp = document.getElementById('exp-head');
-    const infoBoxExp = document.getElementById('exp-box');
-    const clickHeadingSkills = document.getElementById('skills-head');
-    const infoBoxSkills = document.getElementById('skills-box');
-    const clickHeadingEdu = document.getElementById('edu-head');
-    const infoBoxEdu = document.getElementById('edu-box');
-    const clickHeadingCert = document.getElementById('cert-head');
-    const infoBoxCert = document.getElementById('cert-box');
-
-    const toggleInfo = (domElement) => {
-        domElement.classList.toggle('open');
+    //For dynamic content loaded with API
+    const portfolioContainer = document.getElementById('portfolio-container');
+    if(portfolioContainer) {
+        portfolioContainer.addEventListener('click', (event) => {
+            //Check if clicked element has .rotate class
+            const heading = event.target.closest('.rotate');
+            if(heading && portfolioContainer.contains(heading)) {
+                const contentDiv = heading.nextElementSibling;
+                if(contentDiv) {
+                    contentDiv.classList.toggle('open');
+                }
+                const icon = heading.querySelector('i');
+                if(icon) {
+                    icon.classList.toggle('open');
+                }
+            }
+        })
     }
-
-    clickHeadingExp.addEventListener('click', () => {
-        toggleInfo(infoBoxExp);
-    });
-    clickHeadingSkills.addEventListener('click', () => {
-        toggleInfo(infoBoxSkills);
-    });
-    clickHeadingEdu.addEventListener('click', () => {
-        toggleInfo(infoBoxEdu);
-    });
-    clickHeadingCert.addEventListener('click', () => {
-        toggleInfo(infoBoxCert);
-    });
-});
-
-// Flipping heading arrow on cv page
-document.addEventListener('DOMContentLoaded', () => {
+    //For hardcoded content
     document.querySelectorAll('.rotate').forEach(heading => {
         heading.addEventListener('click', () => {
-            heading.querySelector('i').classList.toggle('open');
+            const contentDiv = heading.nextElementSibling;
+            if(contentDiv) {
+                contentDiv.classList.toggle('open');
+            }
+            const icon = heading.querySelector('i');
+            if (icon) {
+                icon.classList.toggle('open');
+            }
         });
     });
 });

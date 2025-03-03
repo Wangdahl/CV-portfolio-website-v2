@@ -17,25 +17,25 @@ document.addEventListener('DOMContentLoaded', async function() {
             </ul>
         `).join('');
 
-            const skillBox = document.getElementById('skills-box');
-            skillBox.innerHTML = Object.entries(data.skills_and_tools).map(([skill, description]) => `
-                <h3>${skill}</h3>
-                <p>${description}</p>
-            `).join('');
+        const skillBox = document.getElementById('skills-box');
+        skillBox.innerHTML = Object.entries(data.skills_and_tools).map(([skill, description]) => `
+            <h3>${skill}</h3>
+            <p>${description}</p>
+        `).join('');
 
-            const eduBox = document.getElementById('edu-box');
-            eduBox.innerHTML = data.education.map(edu => `
-                <h3>${edu.institution}</h3>
-                <h4>${edu.course} - ${edu.period}</h4>
-                <p>${edu.description}</p>
-            `).join('');
+        const eduBox = document.getElementById('edu-box');
+        eduBox.innerHTML = data.education.map(edu => `
+            <h3>${edu.institution}</h3>
+            <h4>${edu.course} - ${edu.period}</h4>
+            <p>${edu.description}</p>
+        `).join('');
 
-            const certBox = document.getElementById('cert-box');
-            certBox.innerHTML = data.certifications.map(cert => `
-                <h3>${cert.institution}</h3>
-                <h4>${cert.title} ${cert.year}</h4>
-                <p>${cert.description}</p>
-            `).join('');
+        const certBox = document.getElementById('cert-box');
+        certBox.innerHTML = data.certifications.map(cert => `
+            <h3>${cert.institution}</h3>
+            <h4>${cert.title} ${cert.year}</h4>
+            <p>${cert.description}</p>
+        `).join('');
     } catch(error) {
             console.error('Error loading CV data: ', error);
         };

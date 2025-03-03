@@ -1,0 +1,77 @@
+/* Portfolio Page styling, mobile adaptations in mobile.css*/
+.sec-one h2 {
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0;
+    padding: 1rem;
+    border-radius: 4px;
+    transition: transform 0.5s ease;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    text-transform: capitalize;
+}
+.sec-one h2:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    box-shadow: 0 1px 2px var(--primary-color);
+}
+.sec-one div {
+    margin: 0 1rem;
+}
+.fa-chevron-down {
+    font-size: 2rem;
+    padding-right: 0.5rem;
+    transition: transform 1s ease;
+
+}
+i.open {
+    transition: transform 1s ease;
+    transform: rotate(180deg);
+}
+.sec-one h3 {
+    margin: 2rem 0 1rem;
+}
+.sec-one h4 {
+    margin: 0.5rem 0;
+}
+.sec-one ul {
+    list-style-position: inside;
+}
+
+.hide {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s ease;
+}
+.hide.open {
+    max-height: 1000px;
+}
+
+.sec-one a {
+    display: inline-block;
+    margin: 1rem 0;
+    font-size: 0.9rem;
+}
+.sec-one a:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+.sec-one a .moving-arrow {
+    color: var(--primary-color);
+    font-size: inherit;
+    transition: transform 0.5s ease;
+    padding-left: 0.5rem;
+}
+.sec-one a:hover .moving-arrow {
+    /* transform: translateX(0.5rem); */
+    animation: moveArrow 0.8s linear infinite;
+}
+@keyframes moveArrow {
+    0% { transform: translateX(0); opacity: 1;}
+    50% { transform: translateX(10px); opacity: 1;}
+    45% { opacity: 0.5; }
+    55% { opacity: 0; }
+    65% { transform: translateX(-10px); opacity: 0;}
+    100% { transform: translateX(0); opacity: 1;}
+}
