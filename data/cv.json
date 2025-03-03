@@ -1,0 +1,79 @@
+{
+    "experience": [
+        {
+            "title": "Affiliate Marketing",
+            "company": "Self-employed",
+            "period": "2019 - 2024",
+            "details": [
+            "Developing and managing websites with a focus on content and organic traffic.",
+            "Grew OddHikers.se from 5000 yearly users in 2020 to over 200000 in 2023."
+            ]
+        },
+        {
+            "title": "Freelance Editor, Content- and Copywriter",
+            "company": "Handheld Group",
+            "period": "2021 - 2024",
+            "details": [
+            "Writer and editor for Ruggedinformer.com.",
+            "Delivered case studies to handheldgroup.com"
+            ]
+        },
+        {
+            "title": "Freelance Editor, Content- and Copywriter",
+            "company": "MilDef AB",
+            "period": "2024",
+            "details": [
+            "Produced copy for mildef.com"
+            ]
+        },
+        {
+            "title": "Marketing Intern",
+            "company": "Handheld Group",
+            "period": "2021",
+            "details": [
+            "Worked with SEO, translations, content creation, and web development."
+            ]
+        }
+        ],
+        "skills_and_tools": {
+        "Web development": "Experience developing in WordPress with a strong base in HTML and CSS, along with basic knowledge of JavaScript and React which is continuously being improved.",
+        "SEO": "Wide base in SEO from affiliate marketing, excelling in keyword analysis and crafting high quality content around those keywords.",
+        "CMS": "Extensive experience with WordPress including developing websites from scratch, plus some experience with WooCommerce and Magento.",
+        "Tools": "Proficient with analytics tools such as Google Analytics, Search Console & Tag Manager; SEO tools like SEMrush & Screaming Frog; and developer tools such as VS Code, Git, and GitHub.",
+        "Agile Project Management": "Trained in agile project methodologies, specifically using the Scrum framework."
+        },
+        "education": [
+        {
+            "institution": "Yrkeshögskolan i Borås",
+            "course": "Frontend Developer",
+            "period": "2025 - current",
+            "description": "Frontend development focusing on JavaScript & React."
+        },
+        {
+            "institution": "Uddevcalla Vuxenutbildning",
+            "course": "E-commerce Product Manager",
+            "period": "2020 - 2022",
+            "description": "Focused on product development, project management and marketing."
+        },
+        {
+            "institution": "De la Gardiegymnasiet",
+            "course": "Technical program",
+            "period": "2005 - 2008",
+            "description": "Orientation - Technical entrepenourship"
+        }
+        ],
+        "certifications": [
+        {
+            "institution": "Pineberry",
+            "title": "Pineberry SEO certificate",
+            "year": "2024",
+            "description": "seocert.se/certifikat/ACjt0+Dj"
+        },
+        {
+            "institution": "Berghs School of Communication",
+            "title": "Copywriting start",
+            "year": "2019",
+            "description": "Introduction to copywriting"
+        }
+    ]
+}
