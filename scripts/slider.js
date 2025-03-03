@@ -3,7 +3,7 @@
 // and modified for modal popups using hash navigation.
 
 document.addEventListener('DOMContentLoaded', function() {
-    // Define the modal IDs (without the '#' symbol) in the order you want them to be navigated.
+    // Define the modal IDs in the order they should be navigated.
     const modalIds = ["popout-one", "popout-two", "popout-three", "popout-four"];
   
     // Initialize slideIndex based on the current hash, defaulting to the first modal.
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
           const prevLink = document.createElement('a');
           prevLink.href = "javascript:void(0)";
           prevLink.className = 'slider-prev';
-          prevLink.innerHTML = "&#10094;"; // left arrow symbol.
+          prevLink.innerHTML = `<i class="fas fa-arrow-left">`;
           prevLink.addEventListener('click', function() {
             plusSlides(-1);
           });
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
           const nextLink = document.createElement('a');
           nextLink.href = "javascript:void(0)";
           nextLink.className = 'slider-next';
-          nextLink.innerHTML = "&#10095;"; // right arrow symbol.
+          nextLink.innerHTML = `<i class="fas fa-arrow-right">`;
           nextLink.addEventListener('click', function() {
             plusSlides(1);
           });
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
   
-    // Update the slideIndex and navigation if the hash changes (e.g. when a modal is closed or manually navigated).
+    // Update the slideIndex and navigation when a modal is closed or manually navigated.
     window.addEventListener('hashchange', function() {
       const newHash = window.location.hash.substring(1);
       const newIndex = modalIds.indexOf(newHash);
@@ -76,5 +76,17 @@ document.addEventListener('DOMContentLoaded', function() {
         updateModalNav();
       }
     });
-  });
-  
+
+      // Add keydown event listener for left/right arrow keys.
+    document.addEventListener('keydown', function(event) {
+      // Only handle if a modal is currently open
+      const currentHash = window.location.hash.substring(1);
+      if (modalIds.indexOf(currentHash) !== -1) {
+        if (event.key === 'ArrowLeft') {
+          plusSlides(-1);
+        } else if (event.key === 'ArrowRight') {
+          plusSlides(1);
+        }
+      }
+    });
+});

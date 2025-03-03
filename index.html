@@ -71,17 +71,17 @@
                 <!--Wrapping divs in a tags to make cards clickable and bring up popup info-->
                 <a class="popout-link" href="#popout-one" >
                     <div class="project" id="project-1">
-                        <img src="./resources/Minimalistic-portfolio.png" alt="">
-                        <h3>Minimalist resumé</h3>
-                        <p>HTML, CSS & JS</p>
+                        <img src="./resources/jammming.png" alt="">
+                        <h3>Jammming</h3>
+                        <p>HTML, CSS & JSX</p>
                         <p class="read-more">Read more<i class="fas fa-arrow-right moving-arrow"></i></p>
                     </div>
                 </a>
                 <a class="popout-link" href="#popout-two" >
                     <div class="project" id="project-2">
-                        <img src="./resources/rock-paper-scissor-x99.png" alt="">
-                        <h3>Rock, Paper, Scissors</h3>
-                        <p>JavaScript</p>
+                        <img src="./resources/hike-list.png" alt="">
+                        <h3>Hiking packlist</h3>
+                        <p>HTML, CSS & JS</p>
                         <p class="read-more">Read more<i class="fas fa-arrow-right moving-arrow"></i></p>
                     </div>
                 </a>
@@ -95,13 +95,14 @@
                 </a>
                 <a class="popout-link" href="#popout-four">
                     <div class="project" id="project-4">
-                        <img src="./resources/excursion.png" alt="">
-                        <h3>Excursion project</h3>
-                        <p>HTML & CSS</p>
+                        <img src="./resources/black-jack.png" alt="">
+                        <h3>Black Jack</h3>
+                        <p>HTML, CSS & JS</p>
                         <p class="read-more">Read more<i class="fas fa-arrow-right moving-arrow"></i></p>
                     </div>
                 </a>
             </div>
+            <a class="read-more" id="portfolio-link" href="./projects.html">Full portfolio<i class="fas fa-arrow-right moving-arrow"></i></a>
         </section>
     </main>
     <!--Modal popup info for each project, Github links etc.-->
@@ -109,18 +110,18 @@
         <a href="#project-section" class="exit-overlay"></a> <!--Overlay that shows behind the popups and turns the background into an "exit button"-->
         <div class="pop-content">
             <a href="#project-section" class="close">&times;</a>
-            <h2>Minimalistic resumé</h2>
-            <p>A CV / resumé in a minimalist style for my previous career as an SEO specialist. It´s built mainly using CSS and HTMl but has some minor JavaScript utility implemented. Take a look at <a class="project-external" href="https://wangdahl.github.io/Portfolio-project/" target="_blank">GitHub Pages <i class="fas fa-external-link-alt"></i></a> or check the code through the button bellow.</p>
-            <a href="https://github.com/Wangdahl/Portfolio-project" class="pop-button" target="_blank">GitHub <i class="fas fa-external-link-alt"></i></a>
+            <h2>Jammming</h2>
+            <p>React app that builds playlists and adds them to the users Spotify acount through the Spotify API. Take a look at <a class="project-external" href="https://jamming-wangdahl-edition.netlify.app" target="_blank">the live version <i class="fas fa-external-link-alt"></i></a> or check the code through the button bellow.</p>
+            <a href="https://github.com/Wangdahl/Jammming" class="pop-button" target="_blank">GitHub <i class="fas fa-external-link-alt"></i></a>
         </div>
     </aside>
     <aside id="popout-two" class="modal">
         <a href="#project-section" class="exit-overlay"></a>
         <div class="pop-content">
             <a href="#project-section" class="close">&times;</a>
-            <h2>Rock, Paper, Scissors</h2>
-            <p>This is the Rock, Paper, Scissors x99 project from CodeCademy. I´ve only done the JavaScript as you start this exercise with some code in place.</p>
-            <a href="https://github.com/Wangdahl/rock-paper-scissors-x99" class="pop-button" target="_blank">GitHub <i class="fas fa-external-link-alt"></i></a>
+            <h2>Hiking Packlist</h2>
+            <p>A simple packlist application built with vanilla JavaScript. Offers preset lists as well as the oportunity to adjust them or build your own from scratch.</p>
+            <a href="https://github.com/Wangdahl/hikers-list" class="pop-button" target="_blank">GitHub <i class="fas fa-external-link-alt"></i></a>
         </div>
     </aside>
     <aside id="popout-three" class="modal">
@@ -136,9 +137,9 @@
         <a href="#project-section" class="exit-overlay"></a>
         <div class="pop-content">
             <a href="#project-section" class="close">&times;</a>
-            <h2>Excursion project</h2>
-            <p>This is another CodeCademy project with a focus on CSS and HTMl.</p>
-            <a class="pop-button" href="https://github.com/Wangdahl/excursion" target="_blank">GitHub <i class="fas fa-external-link-alt"></i></a>
+            <h2>Black Jack</h2>
+            <p>A basic black jack game built with JavaScript and the deck of cards API. Game works well but the API is unstable and probably needs replacing.</p>
+            <a class="pop-button" href="https://github.com/Wangdahl/BlackJack" target="_blank">GitHub <i class="fas fa-external-link-alt"></i></a>
         </div>
     </aside>
     <!--Footer starts here-->
@@ -153,6 +154,6 @@
     <!--Loading JS-->
     <script src="./scripts/script.js"></script>
     <script src="./scripts/dark-mode.js"></script>
-    <!--<script src="./scripts/slider.js"></script>-->
+    <script src="./scripts/slider.js"></script>
 </body>
 </html>
